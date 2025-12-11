@@ -1,0 +1,19 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Uploads folder (user files & ticket images)
+uploads/
+
+# Logs
+*.log
+
+# Sensitive scripts
+_createAdmin.js
+
+# Test scripts
+adminTestLive.js
+userTestLive.js
+testEmail.js
