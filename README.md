@@ -1,55 +1,29 @@
+# Train Ticket System 🚆
 
-```
-train-ticket-system
-├─ .env
-├─ adminTestLive.js
-├─ app.js
-├─ config
-│  └─ db.js
-├─ controllers
-│  ├─ adminControllers.js
-│  ├─ adminTicketController.js
-│  ├─ chatController.js
-│  ├─ cityControllers.js
-│  ├─ ticketControllers.js
-│  └─ userControllers.js
-├─ middleware
-│  ├─ authMiddleware.js
-│  └─ uploadMiddleware.js
-├─ models
-│  ├─ ChatMessage.js
-│  ├─ City.js
-│  ├─ Ticket.js
-│  └─ User.js
-├─ package-lock.json
-├─ package.json
-├─ routes
-│  ├─ adminRoutes.js
-│  ├─ adminTicketRoutes.js
-│  ├─ chatRoutes.js
-│  ├─ cityRoutes.js
-│  ├─ ticketRoutes.js
-│  └─ userRoutes.js
-├─ seeder
-│  └─ citySeeder.js
-├─ server.js
-├─ testEmail.js
-├─ uploads
-│  ├─ 1762841988099.jpg
-│  ├─ tickets
-│  │  └─ ticketImage-1762853809225-311606240.jpg
-│  └─ users
-│     ├─ profilePic-1762853671257-523992289.jpg
-│     ├─ profilePic-1762854075955-103955129.jpg
-│     ├─ profilePic-1762943285623-549560889.jpg
-│     ├─ profilePic-1763118248961-968229159.jpg
-│     ├─ profilePic-1763363234604-553839280.jpg
-│     └─ profilePic-1763381674584-527741925.jpg
-├─ userTestLive.js
-├─ utils
-│  ├─ asyncHandler.js
-│  ├─ passwordValidator.js
-│  └─ sendEmail.js
-└─ _createAdmin.js
+A full-featured **Railway Ticket Management Backend** built with **Node.js, Express, and MongoDB**.  
+This backend handles **user & admin management, ticket booking, cancellations, city management, and real-time chat** functionality.
 
-```
+---
+
+## **Features**
+
+- User registration and authentication with role-based access (User/Admin)
+- Admin dashboard features:
+  - Manage tickets, users, and cities
+  - Confirm or cancel ticket bookings
+- Ticket booking system:
+  - Choose `from` and `to` cities
+  - Select travel date and predefined travel times (5am, 10am, 5pm, 10pm)
+  - Automatic seat assignment
+  - Booking confirmation via email
+  - Cancellation & 80% refund support
+- City management with seeder for initial data
+- Chat system for user-admin communication
+- Security & performance:
+  - Rate limiting
+  - Helmet, XSS protection, Mongo sanitize
+  - Request compression
+- Logging and error handling for easier debugging
+
+---
+
